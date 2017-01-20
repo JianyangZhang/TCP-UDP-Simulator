@@ -38,6 +38,7 @@ and ***msinterval*** is the timeout interval in milliseconds (must be ≥ 1 and 
 10000 to 99999
 
 **<h3><ins>About the UDP mode:</ins></h3>**
+<p>&#x1F53D;<b><i>The real UDP does not work as the following description, this design is just for the purpose of practice</i></b></p>
 For the server, it uses a "loss model" to simulate that UDP packets are dropped. The loss model works by reading bits from a loss model file. Every time an UDP packet from the server to the client is ready to send, read a bit from that file. If the bit is a one, the server sends the UDP packet. If the bit is a zero, the server does not send the UDP packet (and pretend that the packet was lost somewhere in the middle of the Internet). The server only retransmits a loss packet after a timeout interval has expired.
 
 For the client, once it receives a UDP packet, it responses an ACK packet. The first four bytes in ACK packet is the same as the first four bytes in UDP packet. When the congestion window becomes full or all packets have been sent, the server sleeps for a while then checks if it received ACKs from client.
