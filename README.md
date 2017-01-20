@@ -26,15 +26,13 @@ whether to throw a packet away or not, look at the left-most bit in the byte tha
 Once all 8 bits have been used in a byte, read the next byte. 
 If the end of the loss model file has been reached, start from the beginning of the file again.
 
-A window-based protocol is used to provide reliability where ***window*** is the size of the congestion window (which must be ≥ 1) 
-and ***msinterval*** is the timeout interval in milliseconds (which must be ≥ 1 and ≤ 5000).<br/>
-If the ***-w*** commandline option is not specified, the default window size is 3.<br/>
-If the ***-r*** commandline option is not specified, the default timeout interval is 250.
+A window-based protocol is used to provide reliability where ***window*** is the size of the congestion window (must be ≥ 1) 
+and ***msinterval*** is the timeout interval in milliseconds (must be ≥ 1 and ≤ 5000). If the ***-w*** commandline option is not specified, the default window size is 3. If the ***-r*** commandline option is not specified, the default timeout interval is 250.
 
 ***-d:*** debug mode<br/>
 ***-t seconds:*** server auto-shutdown time; must be ≥ 5; default 300 seconds<br/>
-***-o offset:*** must be >= 0; default 0<br/>
-***-l length:*** must be >= 0; default 0xffffffff (-1)<br/>
+***-o offset:*** for network byte order format; must be >= 0; default 0<br/>
+***-l length:*** for network byte order format; must be >= 0; default 0xffffffff (-1)<br/>
 
 **<h3><ins>The port number range:</ins></h3>**
 10000 to 99999
