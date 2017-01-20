@@ -27,7 +27,7 @@ Once all 8 bits have been used in a byte, read the next byte.
 If the end of the loss model file has been reached, start from the beginning of the file again.
 
 A window-based protocol is used to provide reliability where ***window*** is the size of the congestion window (which must be ≥ 1) 
-and ***msinterval*** is the timeout interval in milliseconds (which must be ≥ 1 and ≤ 5000). 
+and ***msinterval*** is the timeout interval in milliseconds (which must be ≥ 1 and ≤ 5000).<br/>
 If the ***-w*** commandline option is not specified, the default window size is 3.<br/>
 If the ***-r*** commandline option is not specified, the default timeout interval is 250.
 
