@@ -35,7 +35,7 @@ and ***msinterval*** is the timeout interval in milliseconds (must be ≥ 1 and 
 ***-l length:*** for network byte order format; must be >= 0; default 0xffffffff (-1)<br/>
 
 **<h3><ins>The port number range:</ins></h3>**
-10000 to 99999
+10000 to 65535
 
 **<h3><ins>About the UDP mode:</ins></h3>**
 <p>&#x1F53D;<b><i>The real UDP does not work as the following description, this design is just for the purpose of practice</i></b></p>
