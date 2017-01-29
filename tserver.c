@@ -672,8 +672,8 @@ void parseArg(int argc, char * argv[]) {
     if (window_size < 1) {window_size = 1;} 
     if (msinterval < 1) {msinterval = 1;} 
     if (msinterval > 5000) {msinterval = 5000;} 
-    if (port < 10000 || port > 99999) {
-        fprintf(stderr, "port must be between 10000 and 99999!\n");
+    if (port < 10000 || port > 65535) {
+        fprintf(stderr, "port must be between 10000 and 65535!\n");
         exit(1);
     }
 }
