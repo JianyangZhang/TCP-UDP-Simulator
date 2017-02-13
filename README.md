@@ -1,4 +1,4 @@
-This project implemented a client and a server in Unix environment.
+This project implemented a client and a server in Unix environment to simulate data transmission of TCP/UDP.
 
 **<h3><ins>Makefile (needs OpenSSL library):</ins></h3>**
 make tserver&nbsp;&nbsp;&nbsp;&nbsp;// *create the executable file tserver*<br/>
